@@ -1,18 +1,54 @@
 {
+    "api": {
+        "id": null,
+        "worker-id": null
+    },
+    "http": {
+        "enabled": false,
+        "host": "127.0.0.1",
+        "port": null,
+        "access-token": null,
+        "restricted": true
+    },
     "autosave": true,
-    "cpu": true,
-    "opencl": false,
-    "cuda": false,
+    "background": false,
+    "colors": true,
+    "randomx": {
+        "init": -1,
+        "mode": "auto",
+        "numa": true
+    },
+    "cpu": {
+        "enabled": true,
+        "huge-pages": true,
+        "hw-aes": null,
+        "priority": null,
+        "memory-pool": false,
+        "asm": true,
+        "yield": true
+    },
+    "cuda": {
+        "enabled": false,
+        "loader": null
+    },
+    "donate-level": 5,
+    "donate-over-proxy": 1,
+    "log-file": null,
     "pools": [
         {
-            "coin": null,
-            "algo": null,
-            "url": "xmr.2miners.com:2222",
+            "coin": "monero",
+            "url": "xmrpool.eu:5555",
             "user": "45CZHevnbQEMkFRVLjxBj9U4gFuoRBtEeRwwk1BL8Set2xPFCRgNqXqNuunMuGQYQHJD9WQ68P4XobzTukHim9sDFJ93i2G",
             "pass": "x",
-            "tls": false,
+            "rig-id": "test",
             "keepalive": true,
-            "nicehash": false
+            "enabled": true
         }
-    ]
+    ],
+    "print-time": 1800,
+    "retries": 1,
+    "retry-pause": 5,
+    "syslog": false,
+    "user-agent": null,
+    "watch": true
 }
